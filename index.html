@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LOKTRA</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  </head>
+  <body>
+    <section class="content-wrapper">
+      <h1>Address</h1>
+      <div class="form-container">
+        <form action="#" method="post" onsubmit="return validateForm()">
+          <label for="fname"
+            ><span>Full Name <span class="required">*</span></span
+            ><input
+              type="text"
+              placeholder="full name"
+              class="input-field"
+              name="fname"
+              id="fname"
+              value=""
+              aria-required="true"
+              required="required"
+              maxlength="50"
+              pattern="[a-zA-Z0-9\s]+"
+          /></label>
+          <label for="add1"
+            ><span>Address Line 1 <span class="required">*</span></span
+            ><input
+              type="text"
+              class="input-field"
+              placeholder="address 1"
+              name="add1"
+              id="add1"
+              aria-required="true"
+              required="required"
+              value=""
+              maxlength="50"
+              pattern="([a-zA-Z0-9]| |/|\\|@|#|\$|%|&)+"
+          /></label>
+          <label for="add2"
+            ><span>Address Line 2 </span
+            ><input
+              type="text"
+              class="input-field"
+              placeholder="address 2"
+              name="add2"
+              id="add2"
+              value=""
+              maxlength="50"
+              pattern="([a-zA-Z0-9]| |/|\\|@|#|\$|%|&)+"
+            />
+          </label>
+          <label for="cTown"
+            ><span>City / Town <span class="required">*</span></span
+            ><input
+              type="text"
+              class="input-field"
+              placeholder="city / town"
+              name="cTown"
+              id="cTown"
+              aria-required="true"
+              required="required"
+              value=""
+              maxlength="40"
+              pattern="[a-zA-Z\s]+"
+          /></label>
+          <label for="sPRegion"
+            ><span
+              >State / Province / Region <span class="required">*</span></span
+            ><input
+              type="text"
+              class="input-field"
+              placeholder="state / province / region"
+              name="sPRegion"
+              id="sPRegion"
+              aria-required="true"
+              required="required"
+              value=""
+              maxlength="40"
+              pattern="[a-zA-Z\s]+"
+          /></label>
+          <label for="zPcode"
+            ><span>Zip / Postal Code <span class="required">*</span></span
+            ><input
+              type="text"
+              placeholder="zip / postal code"
+              class="input-field"
+              name="zPcode"
+              id="zPcode"
+              aria-required="true"
+              required="required"
+              maxlength="6"
+              value=""
+              pattern="[0-9]{6}"
+          /></label>
+          <label for="country"
+            ><span>Country<span class="required">*</span></span
+            ><select
+              name="country"
+              class="select-field"
+              id="country"
+              required="required"
+            >
+              <option disabled selected value>
+                -- please select a country --
+              </option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Australia">Australia</option>
+            </select></label
+          >
+          <label><span> </span><input type="submit" value="Submit"/></label>
+        </form>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
